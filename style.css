@@ -1,0 +1,158 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap:60px;
+  margin-top:60px;
+}
+
+header{
+  display: grid;
+  justify-items: center
+
+}
+
+nav ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+display: flex;
+gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-top: 40px;
+  color: #000;
+}
+
+nav a:hover {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+h1,h2,h3,p{
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  font-size: 1.2rem;
+
+}
+
+h1{
+  font-size: 2rem;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+main{
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.conteudo {
+  background: #fff;
+  padding: 40px;
+  display: grid;
+  text-align: right;
+  align-content:center ;
+  justify-items: end;
+  position: relative;
+  gap: 20px;
+  
+
+}
+
+#label::before{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: red;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+
+}
+
+
+
+.conteudo a{
+  background: red;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 4px
+}
+
+
+.conteudo a:hover{
+  background: rgb(143, 4, 4);
+}
+
+
+
+#subtitulo{
+  display: grid;
+}
+
+
+#label2{
+  font-size: 64px;
+  text-transform: uppercase;
+  padding: 60px;
+  color:rgba(0, 0,0,0.2);
+  text-align: right;
+  background-image: url(/img/onda.svg);
+  place-self: center;
+}
+
+.vantagem{
+  background: #fff;
+  padding: 60px;
+
+}
+
+.vantagem-item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  
+
+  }
+
+.vantagem-item:nth-child(odd) {
+  background-color: #f5f5f5;
+
+}
+.vantagem-item:hover{
+  border-left:4px solid red ;
+}
+
+
+
+  .vantagem-item p {
+    grid-column: 2;
+  }
+
+  footer{
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+
